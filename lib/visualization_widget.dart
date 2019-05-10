@@ -27,11 +27,15 @@ class BodyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Card(
+      child: Container(
       height: 100.0,
       color: color,
       alignment: Alignment.center,
-
+      child: Text("", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+    ),
     );
   }
+
+  
 }
