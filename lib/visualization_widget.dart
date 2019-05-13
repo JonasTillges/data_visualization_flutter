@@ -8,22 +8,17 @@ class DataGrid extends StatelessWidget {
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
           delegate: SliverChildListDelegate(
             [
-              BodyWidget(Colors.blue),
-              BodyWidget(Colors.green),
-              BodyWidget(Colors.yellow),
-              BodyWidget(Colors.orange),
-              BodyWidget(Colors.blue),
-              BodyWidget(Colors.red),
+              WinsWidget(Colors.blue),
+              KillsWidget(Colors.blue)
             ],
           ),
         );
-
   }
 }
-class BodyWidget extends StatelessWidget {
+class WinsWidget extends StatelessWidget {
   final Color color;
 
-  BodyWidget(this.color);
+  WinsWidget(this.color);
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +27,27 @@ class BodyWidget extends StatelessWidget {
       height: 100.0,
       color: color,
       alignment: Alignment.center,
-      child: Text("", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+      child: Text("WINS", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+    ),
+    );
+  }
+
+  
+}
+
+class KillsWidget extends StatelessWidget {
+  final Color color;
+
+  KillsWidget(this.color);
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Container(
+      height: 100.0,
+      color: color,
+      alignment: Alignment.center,
+      child: Text("KILLS", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
     ),
     );
   }
