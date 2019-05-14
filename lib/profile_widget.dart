@@ -31,14 +31,14 @@ class Profile extends StatelessWidget {
       child: CustomScrollView(
         scrollDirection: Axis.horizontal,
         slivers: <Widget>[
-          SliverList(
+          DataGrid(),
+                      SliverList(
             delegate: SliverChildListDelegate(
               [
               Status(),
               ],
             ),
           ),
-          DataGrid()
         ],
       ),
     ),
@@ -48,6 +48,20 @@ class Profile extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         slivers: <Widget>[
           SliverList(
+            delegate: SliverChildListDelegate(
+              [
+              Status(),
+              ],
+            ),
+          ),
+                    SliverList(
+            delegate: SliverChildListDelegate(
+              [
+              Status(),
+              ],
+            ),
+          ),
+                    SliverList(
             delegate: SliverChildListDelegate(
               [
               Status(),
