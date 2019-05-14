@@ -13,6 +13,7 @@ class _StatusState extends State<Status> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.all(8),
       child: RaisedButton(
         color: color,
         onPressed: () {},

@@ -8,7 +8,9 @@ class Profile extends StatelessWidget {
  Widget build(BuildContext context) {
    return Scaffold(
     body: Container(
+      height: 400.0,
       child: CustomScrollView(
+        scrollDirection: Axis.horizontal,
         slivers: <Widget>[
           SliverList(
             delegate: SliverChildListDelegate(
