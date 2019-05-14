@@ -3,3 +3,6 @@
 Data visualization in Flutter.
 
 
+```
+flutter packages get
+```
