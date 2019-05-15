@@ -81,8 +81,6 @@ class _HomeState extends State<Home> {
             new BottomNavigationBarItem(
               icon: new Icon(Icons.trending_up, color: Colors.blue),
               title: Container(height: 0.0),
-
-     
             ),
             new BottomNavigationBarItem(
               icon: new Icon(Icons.search, color: Colors.blue,),
@@ -96,7 +94,7 @@ class _HomeState extends State<Home> {
             ),
             new BottomNavigationBarItem(
               icon: new Icon(Icons.contacts, color: Colors.blue),
-              title: Container(height: 0.0)
+              title: Container(height: 0.0),
               
             ),
 

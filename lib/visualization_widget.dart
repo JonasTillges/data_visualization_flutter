@@ -5,6 +5,7 @@ class DataGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new SliverGrid(
+      
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
           delegate: SliverChildListDelegate(
             [
@@ -61,7 +62,7 @@ class KillsWidget extends StatelessWidget {
       child: Container(
       color: color,
       alignment: Alignment.center,
-      child: Text("KILLS", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold))
+      child: Text("POINTS", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold))
       ),
     ),
     );
